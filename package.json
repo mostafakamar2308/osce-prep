@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "types": "pnpm --filter @osce-prep/types",
-    "landing": "pnpm --filter landing"
+    "landing": "pnpm --filter landing",
+    "platform": "pnpm --filter platform"
   },
   "keywords": [],
   "author": "",
