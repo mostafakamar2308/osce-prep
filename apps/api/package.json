@@ -14,9 +14,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
+    "@clerk/express": "^1.7.52",
+    "@med-simulate/models": "workspace:*",
     "@med-simulate/types": "workspace:*",
-    "@med-simulate/models": "workspace:*"
+    "express": "^5.1.0"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.2",
