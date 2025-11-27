@@ -41,6 +41,11 @@ module.exports = {
           DEFAULT: 'hsl(var(--card))',
           foreground: 'hsl(var(--card-foreground))',
         },
+        chart: {
+          primary: 'hsl(var(--chart-1))',
+          secondary: 'hsl(var(--chart-2))',
+          tertiary: 'hsl(var(--chart-3))',
+        },
       },
       borderRadius: {
         lg: 'var(--radius)',

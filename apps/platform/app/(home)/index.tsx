@@ -1,11 +1,21 @@
-import { Text, View } from 'react-native';
+import Cases from '@/components/home/cases';
+import Header from '@/components/layout/Header';
+import SupportButton from '@/components/layout/SupportButton';
+import { Text } from '@/components/ui/text';
+import { useFormatMessage } from '@/hooks/intl';
+import { View } from 'react-native';
 
 export default function Index() {
+  const intl = useFormatMessage();
+
   return (
-    <View className="flex-1 flex justify-center items-center">
-      <Text className="text-4xl text-red-400">
-        Hi mate, I hope you are alright
+    <View className="flex-1 relative flex gap-5 py-16 px-2">
+      <Header />
+      <Text variant="h3" className="text-center text-chart-secondary">
+        {intl('home.verse')}{' '}
       </Text>
+      <Cases />
+      <SupportButton />
     </View>
   );
 }
