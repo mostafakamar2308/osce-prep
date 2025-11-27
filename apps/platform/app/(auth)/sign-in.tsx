@@ -13,6 +13,9 @@ export default function Page() {
       <Image className="invert" width={64} height={64} source={logo} />
       <Text className="text-4xl my-4">{intl('auth.welcome')}</Text>
       <SignInForm />
+      <Link className="border-b" href="/">
+        {intl('auth.register.title')}
+      </Link>
       <Text className="text-lg">
         {intl.rich('auth.redirect-to-sign-up', {
           register: (
