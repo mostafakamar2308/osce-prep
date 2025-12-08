@@ -1,3 +1,13 @@
 packages:
-  - 'packages/*'
-  - 'apps/*'
+  - packages/*
+  - apps/*
+onlyBuiltDependencies:
+  - '@clerk/shared'
+  - '@prisma/engines'
+  - '@swc/core'
+  - browser-tabs-lock
+  - core-js
+  - esbuild
+  - prisma
+  - sharp
+  - unrs-resolver
